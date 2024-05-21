@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number and Code Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-binary-code-7420216-6130252.png?f=webp">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Enter Number</h2>
+            <input type="text" id="numberInput" oninput="validateNumberInput()">
+        </div>
+        <div class="box">
+            <h2>Enter Code</h2>
+            <input type="text" id="codeInput" oninput="validateCodeInput()">
+        </div>
+        <div class="box">
+            <h2>Enter Word</h2>
+            <input type="text" id="wordInput" oninput="validateWordInput()">
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="toCodeButton" onclick="translateToCode()" disabled>Translate to Code</button>
+        <button id="toNumberButton" onclick="translateToNumber()" disabled>Translate to Number</button>
+        <button id="toWordsButton" onclick="translateToWords()" disabled>Translate to Words</button>
+        <button id="toCodeFromWordButton" onclick="translateWordToCode()" disabled>Translate Word to Code</button>
+    </div>
+    <div class="box">
+        <h2>Output</h2>
+        <textarea id="outputBox" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
